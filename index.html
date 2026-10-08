@@ -76,34 +76,58 @@
     <body>
         <!-- Navigation -->
         <div class="w3-top">
-            <nav class="w3-flex" id="myNavbar">
-                <a href="#home" class="w3-button">HOME</a>
+            <nav>
+                <ul class="w3-flex" id="myNavbar" style="list-style: none; padding: 0; margin: 0">
+                    <li>
+                        <a href="#home" class="w3-button">HOME</a>
+                    </li>
 
-                <a href="#about" class="w3-button w3-hide-small"> <i class="fa fa-user"></i> SOBRE DE MÍ </a>
+                    <li>
+                        <a href="#about" class="w3-button w3-hide-small"> <i class="fa fa-user"></i> SOBRE DE MÍ </a>
+                    </li>
 
-                <a href="#portfolio" class="w3-button w3-hide-small"> <i class="fa fa-th"></i> MI TRABAJO </a>
+                    <li>
+                        <a href="#portfolio" class="w3-button w3-hide-small"> <i class="fa fa-th"></i> MI TRABAJO </a>
+                    </li>
 
-                <a href="#contact" class="w3-button w3-hide-small"> <i class="fa fa-envelope"></i> CONTACTO </a>
+                    <li>
+                        <a href="#contact" class="w3-button w3-hide-small"> <i class="fa fa-envelope"></i> CONTACTO </a>
+                    </li>
 
-                <a href="#" class="w3-button w3-hide-small w3-hover-red" style="margin-left: auto">
-                    <i class="fa fa-search"></i>
-                </a>
+                    <li>
+                        <a href="#" class="w3-button w3-hide-small w3-hover-red" style="margin-left: auto">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </li>
 
-                <button class="w3-button w3-hide-medium w3-hide-large" style="margin-left: auto" onclick="toggleFunction()" title="Toggle Navigation Menu">
-                    <i class="fa fa-bars"></i>
-                </button>
+                    <li style="margin-left: auto">
+                        <button class="w3-button w3-hide-medium w3-hide-large" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                    </li>
+                </ul>
             </nav>
 
             <!-- Navigation on small screens -->
-            <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-                <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">SOBRE DE MÍ</a>
+            <nav id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+                <ul style="list-style: none; margin: 0; padding: 0">
+                    <li>
+                        <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">SOBRE DE MÍ</a>
+                    </li>
 
-                <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">MI TRABAJO</a>
+                    <li>
+                        <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">MI TRABAJO</a>
+                    </li>
 
-                <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTO</a>
+                    <li>
+                        <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTO</a>
+                    </li>
 
-                <a href="#" class="w3-bar-item w3-button">SEARCH</a>
-            </div>
+                    <li>
+                        <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
 
         <!-- First Parallax Image -->
