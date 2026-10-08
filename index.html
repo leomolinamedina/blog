@@ -190,6 +190,7 @@
 
                 <!-- Statistics -->
                 <article class="w3-grid w3-center w3-dark-grey w3-padding-16" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))">
+                    <h3 style="display: none">Mis estadisticas</h3>
                     <div class="w3-section">
                         <span class="w3-xlarge">14+</span><br />
                         Partners
@@ -219,7 +220,7 @@
 
                     <!-- Portfolio -->
                     <div class="w3-content w3-container w3-padding-64" id="portfolio">
-                        <h3 class="w3-center">MI TRABAJO</h3>
+                        <h4 class="w3-center">MI TRABAJO</h4>
 
                         <p class="w3-center">
                             <em>
@@ -286,47 +287,71 @@
                     </header>
 
                     <!-- Contact -->
-                    <section class="w3-content w3-container w3-padding-64" id="contact">
-                        <h3 class="w3-center">DONDE TRABAJO</h3>
+                    <div class="w3-content w3-container w3-padding-64" id="contact">
+                        <h4 class="w3-center">DONDE TRABAJO</h4>
 
                         <p class="w3-center">
                             <em>¡me encantaría recibir tus comentarios!</em>
                         </p>
 
-                        <div class="w3-grid w3-padding-32" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px">
-                            <div>
-                                <img src="assets/img/mapa-lugo.webp" alt="Mapa de Lugo" class="w3-round" style="width: 100%" />
-                            </div>
+                        <div class="w3-large w3-margin-bottom">
+                            <p>Llámanos, envíanos un correo electrónico o visítanos:</p>
 
-                            <div>
-                                <div class="w3-large w3-margin-bottom">
+                            <ul style="list-style: none; margin: 0; padding: 0">
+                                <li>
                                     <i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right"></i>
                                     Lugo, Galicia<br />
-
+                                </li>
+                                <li>
                                     <i class="fa fa-phone fa-fw w3-xlarge w3-margin-right"></i>
-                                    Teléfono: <a href="tel:+34697423541">+34 697 42 35 41</a><br />
+                                    Teléfono: <a href="tel:+34697423541">+34 697 42 35 41</a>
+                                </li>
+                                <li><i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right"></i>Email: <a href="mailto:leonardommm24@gmail.com">leonardommm24@mail.com</a></li>
+                            </ul>
+                        </div>
 
-                                    <i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right"></i>Email: <a href="mailto:leonardommm24@gmail.com">leonardommm24@mail.com</a>
-                                </div>
+                        <div class="w3-grid w3-padding-32" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px">
+                            <figure style="margin: 0">
+                                <a href="https://maps.app.goo.gl/CpcDnpWUXfdbyqTX9" title="Dirección en Google Maps" target="_blank">
+                                    <img src="https://www.mapasespana.com/mapas/Lugo_Area.jpg" class="w3-round" style="width: 100%" alt="Mapa de Lugo" />
+                                </a>
+                            </figure>
 
-                                <p>Pase por aquí para tomar una taza de <i class="fa fa-coffee"></i>, o déjame una nota:</p>
+                            <div>
+                                <p>Visítanos y tómate un <i class="fa fa-coffee"></i> café</p>
+                                <p>o envíanos un mensaje a través de nuestro</p>
 
-                                <form action="/action_page.php" target="_blank">
-                                    <div class="w3-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px">
-                                        <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Name" />
+                                <form action="formulario/eviado.html" method="post" id="form">
+                                    <fieldset style="margin: 1em; padding: 0.5em 1em; border-radius: 5px; border-color: lightgray">
+                                        <legend style="padding: 1em; border: 1px solid lightgray; border-radius: 5px">Formulario de contacto</legend>
 
-                                        <input class="w3-input w3-border" type="email" placeholder="Email" required name="Email" />
-                                    </div>
-
-                                    <p>
-                                        <input class="w3-input w3-border" type="text" placeholder="Mensaje" required name="Message" />
-                                    </p>
-
-                                    <button class="w3-button w3-black w3-right" type="submit">ENVIAR MENSAJE</button>
+                                        <ul class="w3-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; list-style: none; padding: 0 2em">
+                                            <li>
+                                                <label for="name">Nombre</label>
+                                                <input type="text" placeholder="Tu nombre" name="name" id="name" required="" class="w3-input w3-border" />
+                                            </li>
+                                            <li>
+                                                <label for="email">Correo electrónico</label>
+                                                <input type="email" placeholder="Tu Correo electrónico" name="email" id="email" required="" class="w3-input w3-border" />
+                                            </li>
+                                            <li>
+                                                <label for="mensaxe">Texto del mensaje</label>
+                                                <textarea placeholder="Escribe tu mensaje aquí" id="mensaxe" cols="30" rows="5" required="" style="padding: 0.5em; width: 100%; border-color: lightgrey"></textarea>
+                                            </li>
+                                        </ul>
+                                    </fieldset>
+                                    <ul style="list-style: none; text-align: center">
+                                        <li style="display: inline-block; margin: 1em">
+                                            <input type="submit" value="Enviar" id="enviar" class="w3-button w3-black" />
+                                        </li>
+                                        <li style="display: inline-block; margin: 1em">
+                                            <input type="reset" value="Borrar" id="borrar" class="w3-button w3-black" />
+                                        </li>
+                                    </ul>
                                 </form>
                             </div>
                         </div>
-                    </section>
+                    </div>
                 </article>
             </section>
         </main>
