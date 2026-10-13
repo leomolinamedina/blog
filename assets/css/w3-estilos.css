@@ -63,6 +63,10 @@ ol {
     margin-left: auto;
 }
 
+.mayusculas {
+    text-transform: uppercase;
+}
+
 .pechado {
     display: none;
 }
