@@ -3,20 +3,10 @@
     --color-secundario: #3d00a7;
     --color-terciario: #0e42ff;
     --color-texto: #222;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Lato", sans-serif;
-}
-
-h1 {
-    white-space: nowrap;
+    --fontfamilly-titles: "Cormorant Garamond", serif;
+    --fontweight-titles: 800;
+    --fontfamilly-textos: "Clarity City", sans-serif;
+    --fontweight-textos: 400;
 }
 
 body,
@@ -25,6 +15,22 @@ html {
     color: #777;
     line-height: 1.8;
     font-size: 15px;
+    font-family: var(--fontfamilly-textos);
+    font-weight: var(--fontweight-textos);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--fontfamilly-titles);
+    font-weight: var(--fontweight-titles);
+}
+
+h1 {
+    white-space: nowrap;
 }
 
 html,
