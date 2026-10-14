@@ -10,69 +10,70 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
         <title>Blog de practicas | Leonardo Molina</title>
+        <link rel="stylesheet" href="assets/css/leo-estilos.css" />
         <link rel="stylesheet" href="assets/css/w3-estilos.css" />
     </head>
 
     <body>
         <!-- First Parallax Image -->
-        <header class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-            <div class="w3-display-middle">
+        <header class="leo-bgimg-1 leo-display-container leo-opacity-min" id="home">
+            <div class="leo-display-middle">
                 <figure>
                     <img src="assets/img/avatar.webp" alt="Logo del sitio" width="200" />
                 </figure>
-                <h1 class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Blog de Leo</h1>
+                <h1 class="leo-text-center leo-padding-large leo-text-black leo-text-xlarge leo-text-wide leo-animate-opacity">Blog de Leo</h1>
             </div>
         </header>
 
         <!-- Navigation -->
-        <nav class="w3-top">
+        <nav class="leo-position-top">
             <h2 class="pechado">Menu Principal</h2>
-            <ul class="w3-flex" id="myNavbar">
+            <ul class="leo-flex" id="myNavbar">
                 <li>
-                    <a href="#home" class="w3-button"><i class="fa fa-home"></i>Inicio</a>
+                    <a href="#home" class="leo-button"><i class="fa fa-home"></i>Inicio</a>
                 </li>
 
                 <li>
-                    <a href="#about" class="w3-button w3-hide-small"> <i class="fa fa-user"></i> SOBRE DE MÍ </a>
+                    <a href="#about" class="leo-button leo-hide-small"> <i class="fa fa-user"></i> SOBRE DE MÍ </a>
                 </li>
 
                 <li>
-                    <a href="#portfolio" class="w3-button w3-hide-small"> <i class="fa fa-th"></i> MI TRABAJO </a>
+                    <a href="#portfolio" class="leo-button leo-hide-small"> <i class="fa fa-th"></i> MI TRABAJO </a>
                 </li>
 
                 <li>
-                    <a href="#contact" class="w3-button w3-hide-small mayusculas"> <i class="fa fa-envelope"></i> Contacto </a>
+                    <a href="#contact" class="leo-button leo-hide-small mayusculas"> <i class="fa fa-envelope"></i> Contacto </a>
                 </li>
 
                 <li class="align-right">
-                    <a href="#" class="w3-button w3-hide-small w3-hover-red" class="align-right">
+                    <a href="#" class="leo-button leo-hide-small leo-hover-red" class="align-right">
                         <i class="fa fa-search"></i>
                     </a>
                 </li>
 
                 <li>
-                    <button class="w3-button w3-hide-medium w3-hide-large" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                    <button class="leo-button leo-hide-medium leo-hide-large" onclick="toggleFunction()" title="Toggle Navigation Menu">
                         <i class="fa fa-bars"></i>
                     </button>
                 </li>
             </ul>
 
             <!-- Navigation on small screens -->
-            <ul id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+            <ul id="navDemo" class="leo-white leo-hide leo-hide-large leo-hide-medium">
                 <li>
-                    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">SOBRE DE MÍ</a>
+                    <a href="#about" class="leo-button" onclick="toggleFunction()">SOBRE DE MÍ</a>
                 </li>
 
                 <li>
-                    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">MI TRABAJO</a>
+                    <a href="#portfolio" class="leo-button" onclick="toggleFunction()">MI TRABAJO</a>
                 </li>
 
                 <li>
-                    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTO</a>
+                    <a href="#contact" class="leo-button" onclick="toggleFunction()">CONTACTO</a>
                 </li>
 
                 <li>
-                    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+                    <a href="#" class="leo-button">SEARCH</a>
                 </li>
             </ul>
         </nav>
@@ -81,74 +82,74 @@
             <section>
                 <h2 class="pechado">Sobre mi y mis proyectos</h2>
                 <!-- About -->
-                <article class="w3-content w3-container w3-padding-64" id="about">
-                    <h3 class="w3-center mayusculas">Sobre Mí</h3>
+                <article class="leo-content leo-container leo-padding-64" id="about">
+                    <h3 class="leo-text-center mayusculas">Sobre Mí</h3>
 
-                    <p class="w3-center">
+                    <p class="leo-text-center">
                         <em>Me gusta crear cosas que funcionan.</em>
                     </p>
 
                     <p>Hola, soy Leonardo. Actualmente estoy aprendiendo programación y desarrollo web. Me interesa conocer cómo funcionan las páginas web y todo lo que hay detrás de ellas. Poco a poco voy aprendiendo nuevas herramientas y mejorando mis conocimientos.</p>
 
-                    <div class="w3-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px">
-                        <div class="w3-center w3-padding-large">
+                    <div class="leo-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px">
+                        <div class="leo-text-center leo-padding-large">
                             <p>
                                 <b>
-                                    <i class="fa fa-user w3-margin-right"></i>
+                                    <i class="fa fa-user leo-margin-right"></i>
                                     Leonardo Molina
                                 </b>
                             </p>
 
-                            <img src="assets/img/avatar.webp" class="w3-round w3-opacity w3-hover-opacity-off avatar" alt="Avatar de Leonardo" />
+                            <img src="assets/img/avatar.webp" class="leo-opacity avatar" alt="Avatar de Leonardo" />
                         </div>
 
-                        <div class="w3-padding-large">
+                        <div class="leo-padding-large">
                             <p>¡Hola! Soy Leonardo y actualmente estoy aprendiendo programación web. Siempre me ha llamado la atención la tecnología y la forma en la que se pueden crear cosas utilizando un ordenador. En este momento estoy aprendiendo los conceptos básicos del desarrollo web y practicando con diferentes ejercicios y pequeños proyectos. Mi objetivo es seguir aprendiendo poco a poco y conseguir crear mis propias páginas web desde cero.</p>
                         </div>
                     </div>
 
-                    <p class="w3-large w3-center w3-padding-16">Actualmente estoy aprendiendo:</p>
+                    <p class="leo-text-large leo-text-center leo-padding-16">Actualmente estoy aprendiendo:</p>
 
-                    <p class="w3-wide"><i class="fa fa-html5"></i> HTML</p>
+                    <p class="leo-text-wide"><i class="fa fa-html5"></i> HTML</p>
 
                     <div class="w3-light-grey">
-                        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width: 90%">90%</div>
+                        <div class="leo-container w3-padding-small w3-dark-grey leo-text-center" style="width: 90%">90%</div>
                     </div>
 
-                    <p class="w3-wide"><i class="fa fa-css3"></i> CSS3</p>
+                    <p class="leo-text-wide"><i class="fa fa-css3"></i> CSS3</p>
 
                     <div class="w3-light-grey">
-                        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width: 85%">85%</div>
+                        <div class="leo-container w3-padding-small w3-dark-grey leo-text-center" style="width: 85%">85%</div>
                     </div>
 
-                    <p class="w3-wide"><i class="fa fa-laptop"></i> Diseño web</p>
+                    <p class="leo-text-wide"><i class="fa fa-laptop"></i> Diseño web</p>
 
                     <div class="w3-light-grey">
-                        <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width: 75%">75%</div>
+                        <div class="leo-container w3-padding-small w3-dark-grey leo-text-center" style="width: 75%">75%</div>
                     </div>
                 </article>
 
                 <!-- Statistics -->
                 <article>
                     <h3 class="pechado">Mis estadisticas</h3>
-                    <ul class="w3-grid w3-center w3-dark-grey w3-padding-16" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))">
-                        <li class="w3-section">
-                            <span class="w3-xlarge">14+</span><br />
+                    <ul class="leo-grid leo-text-center w3-dark-grey leo-padding-16" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr))">
+                        <li class="leo-section">
+                            <span class="leo-text-xlarge">14+</span><br />
                             Partners
                         </li>
 
-                        <li class="w3-section">
-                            <span class="w3-xlarge">55+</span><br />
+                        <li class="leo-section">
+                            <span class="leo-text-xlarge">55+</span><br />
                             Projects Done
                         </li>
 
-                        <li class="w3-section">
-                            <span class="w3-xlarge">89+</span><br />
+                        <li class="leo-section">
+                            <span class="leo-text-xlarge">89+</span><br />
                             Happy Clients
                         </li>
 
-                        <li class="w3-section">
-                            <span class="w3-xlarge">150+</span><br />
+                        <li class="leo-section">
+                            <span class="leo-text-xlarge">150+</span><br />
                             Meetings
                         </li>
                     </ul>
@@ -156,22 +157,22 @@
 
                 <article>
                     <!-- Second Parallax Image -->
-                    <header id="portfolio" class="bgimg-2 w3-display-container w3-opacity-min">
-                        <h3 class="w3-display-middle w3-xxlarge w3-text-white w3-wide mayusculas" style="background: #00000080; padding: 0 15px; width: 100%; text-align: center">Trabajos</h3>
+                    <header id="portfolio" class="leo-bgimg-2 leo-display-container leo-opacity-min">
+                        <h3 class="w3-display-middle w3-xxlarge w3-text-white leo-text-wide mayusculas" style="background: #00000080; padding: 0 15px; width: 100%; text-align: center">Trabajos</h3>
                     </header>
 
                     <!-- Portfolio -->
-                    <div class="w3-content w3-container w3-padding-64">
-                        <h4 class="w3-center mayusculas">Mi Trabajo</h4>
+                    <div class="leo-content leo-container leo-padding-64">
+                        <h4 class="leo-text-center mayusculas">Mi Trabajo</h4>
 
-                        <p class="w3-center">
+                        <p class="leo-text-center">
                             <em>
                                 Éstos son algunos de mis últimos trabajos.<br />
                                 Haga clic en las imágenes para agrandarlas.
                             </em>
                         </p>
 
-                        <ul class="w3-grid w3-padding-32" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px">
+                        <ul class="leo-grid w3-padding-32" style="grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px">
                             <li>
                                 <img src="https://www.w3schools.com/w3images/p1.jpg" style="width: 100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains" />
                             </li>
@@ -205,57 +206,57 @@
                             </li>
                         </ul>
 
-                        <p class="w3-center">
-                            <button class="w3-button w3-padding-large w3-light-grey">CARGAR MÁS</button>
+                        <p class="leo-text-center">
+                            <button class="leo-button leo-padding-large w3-light-grey">CARGAR MÁS</button>
                         </p>
                     </div>
 
                     <!-- Image Modal -->
-                    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display = 'none'">
-                        <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"> × </span>
+                    <div id="modal01" class="w3-modal leo-text-black" onclick="this.style.display = 'none'">
+                        <span class="leo-button leo-text-large leo-text-black w3-display-topright" title="Close Modal Image"> × </span>
 
-                        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                        <div class="w3-modal-content w3-animate-zoom leo-text-center w3-transparent leo-padding-64">
                             <img id="img01" class="w3-image" alt="Selected portfolio image" src="assets/img/avatar.webp" />
 
-                            <p id="caption" class="w3-opacity w3-large"></p>
+                            <p id="caption" class="leo-opacity leo-text-large"></p>
                         </div>
                     </div>
                 </article>
 
-                <article>
+                <article class="contacto">
                     <!-- Third Parallax Image -->
-                    <header id="contact" class="bgimg-3 w3-display-container w3-opacity-min">
-                        <h3 class="w3-display-middle w3-xxlarge w3-text-white w3-wide mayusculas" style="background: #00000080; padding: 0 15px; width: 100%; text-align: center">CONTACTO</h3>
+                    <header id="contact" class="bgimg-3 leo-display-container leo-opacity-min">
+                        <h3 class="w3-display-middle w3-xxlarge w3-text-white leo-text-wide mayusculas" style="background: #00000080; padding: 0 15px; width: 100%; text-align: center">CONTACTO</h3>
                     </header>
 
                     <!-- Contact -->
-                    <div class="w3-content w3-container w3-padding-64">
-                        <h4 class="w3-center mayusculas">Donde Trabajo</h4>
+                    <div class="leo-content leo-container leo-padding-64">
+                        <h4 class="leo-text-center mayusculas">Donde Trabajo</h4>
 
-                        <p class="w3-center">
+                        <p class="leo-text-center">
                             <em>¡me encantaría recibir tus comentarios!</em>
                         </p>
 
-                        <div class="w3-large w3-margin-bottom">
+                        <address class="leo-text-large w3-margin-bottom">
                             <p>Llámanos, envíanos un correo electrónico o visítanos:</p>
 
                             <ul>
                                 <li>
-                                    <i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right"></i>
+                                    <i class="fa fa-map-marker fa-fw leo-text-xlarge leo-margin-right"></i>
                                     Lugo, Galicia<br />
                                 </li>
                                 <li>
-                                    <i class="fa fa-phone fa-fw w3-xlarge w3-margin-right"></i>
+                                    <i class="fa fa-phone fa-fw leo-text-xlarge leo-margin-right"></i>
                                     Teléfono: <a href="tel:+34697423541">+34 697 42 35 41</a>
                                 </li>
-                                <li><i class="fa fa-envelope fa-fw w3-xlarge w3-margin-right"></i>Email: <a href="mailto:leonardommm24@gmail.com">leonardommm24@mail.com</a></li>
+                                <li><i class="fa fa-envelope fa-fw leo-text-xlarge leo-margin-right"></i>Email: <a href="mailto:leonardommm24@gmail.com">leonardommm24@mail.com</a></li>
                             </ul>
-                        </div>
+                        </address>
 
-                        <div class="w3-grid w3-padding-32" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px">
+                        <div class="leo-grid w3-padding-32" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px">
                             <figure style="margin: 0">
                                 <a href="https://maps.app.goo.gl/CpcDnpWUXfdbyqTX9" title="Dirección en Google Maps" target="_blank">
-                                    <img src="https://www.mapasespana.com/mapas/Lugo_Area.jpg" class="w3-round" style="width: 100%" alt="Mapa de Lugo" />
+                                    <img src="https://www.mapasespana.com/mapas/Lugo_Area.jpg" style="width: 100%" alt="Mapa de Lugo" />
                                 </a>
                             </figure>
 
@@ -267,7 +268,7 @@
                                     <fieldset style="margin: 1em; padding: 0.5em 1em; border-radius: 5px; border-color: lightgray">
                                         <legend style="padding: 1em; border: 1px solid lightgray; border-radius: 5px">Formulario de contacto</legend>
 
-                                        <ul class="w3-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; padding: 0 2em">
+                                        <ul class="leo-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 8px; padding: 0 2em">
                                             <li>
                                                 <label for="name">Nombre</label>
                                                 <input type="text" placeholder="Tu nombre" name="name" id="name" required="" class="w3-input w3-border" />
@@ -284,10 +285,10 @@
                                     </fieldset>
                                     <ul style="text-align: center">
                                         <li style="display: inline-block; margin: 1em">
-                                            <input type="submit" value="Enviar" id="enviar" class="w3-button w3-black" />
+                                            <input type="submit" value="Enviar" id="enviar" class="leo-button leo-text-black" />
                                         </li>
                                         <li style="display: inline-block; margin: 1em">
-                                            <input type="reset" value="Borrar" id="borrar" class="w3-button w3-black" />
+                                            <input type="reset" value="Borrar" id="borrar" class="leo-button leo-text-black" />
                                         </li>
                                     </ul>
                                 </form>
@@ -299,13 +300,13 @@
         </main>
 
         <!-- Footer -->
-        <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-            <a href="#home" class="w3-button w3-light-grey">
-                <i class="fa fa-arrow-up w3-margin-right"></i>
+        <footer class="leo-text-center leo-text-black leo-padding-64 leo-opacity">
+            <a href="#home" class="leo-button w3-light-grey">
+                <i class="fa fa-arrow-up leo-margin-right"></i>
                 Hasta arriba
             </a>
 
-            <ul class="w3-xlarge w3-section" style="display: flex; justify-content: center; gap: 10px; align-items: center">
+            <ul class="leo-text-xlarge leo-section" style="display: flex; justify-content: center; gap: 10px; align-items: center">
                 <li>
                     <i class="fa fa-facebook-official w3-hover-opacity"></i>
                 </li>
@@ -344,9 +345,9 @@
                     var navbar = document.getElementById("myNavbar");
 
                     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                        navbar.className = "w3-flex w3-card w3-animate-top w3-white";
+                        navbar.className = "leo-flex w3-card w3-animate-top leo-white";
                     } else {
-                        navbar.className = "w3-flex";
+                        navbar.className = "leo-flex";
                     }
                 };
 
@@ -354,10 +355,10 @@
                 function toggleFunction() {
                     var x = document.getElementById("navDemo");
 
-                    if (x.className.indexOf("w3-show") == -1) {
-                        x.className += " w3-show";
+                    if (x.className.indexOf("leo-show") == -1) {
+                        x.className += " leo-show";
                     } else {
-                        x.className = x.className.replace(" w3-show", "");
+                        x.className = x.className.replace(" leo-show", "");
                     }
                 }
             </script>

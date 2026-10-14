@@ -17,6 +17,7 @@ html {
     height: 100%;
     color: #777;
     line-height: 1.8;
+    font-size: 15px;
 }
 
 ul,
@@ -26,9 +27,18 @@ ol {
     margin: 0;
 }
 
+ol li,
+ul li {
+    display: inline-block;
+}
+
+img {
+    vertical-align: middle;
+}
+
 /* Parallax images */
-.bgimg-1,
-.bgimg-2,
+.leo-bgimg-1,
+.leo-bgimg-2,
 .bgimg-3 {
     background-attachment: fixed;
     background-position: center;
@@ -36,12 +46,12 @@ ol {
     background-size: cover;
 }
 
-.bgimg-1 {
+.leo-bgimg-1 {
     background-image: url("../img/tag-html_1920.webp");
     min-height: 100%;
 }
 
-.bgimg-2 {
+.leo-bgimg-2 {
     background-image: url("../img/developer_1920.webp");
     min-height: 400px;
 }
@@ -70,6 +80,11 @@ ol {
 img.avatar {
     width: 100%;
     max-width: 500px;
+    border-radius: 4px;
+}
+
+img.avatar:hover {
+    opacity: 1;
 }
 
 .pechado {
@@ -78,8 +93,8 @@ img.avatar {
 
 /* Turn off parallax scrolling on tablets and phones */
 @media only screen and (max-width: 1600px) {
-    .bgimg-1,
-    .bgimg-2,
+    .leo-bgimg-1,
+    .leo-bgimg-2,
     .bgimg-3 {
         background-attachment: scroll;
         min-height: 400px;
