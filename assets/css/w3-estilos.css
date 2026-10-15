@@ -73,29 +73,29 @@ img {
     vertical-align: middle;
 }
 
-/* Parallax images */
-.leo-bgimg-1,
-.leo-bgimg-2,
-.bgimg-3 {
-    background-attachment: fixed;
+.leo-bgimg {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.leo-bgimg-1 {
-    background-image: url("../img/tag-html_1920.webp");
+/* Parallax images */
+.leo-fixed {
+    background-attachment: fixed;
+    min-height: 50vh;
+}
+
+.leo-portada {
     min-height: 100%;
+    background-image: url("../img/tag-html_1920.webp");
 }
 
-.leo-bgimg-2 {
+.leo-parallax-2 {
     background-image: url("../img/developer_1920.webp");
-    min-height: 400px;
 }
 
-.bgimg-3 {
+.leo-parallax-3 {
     background-image: url("../img/web-design_1920.webp");
-    min-height: 400px;
 }
 
 .w3-wide {
@@ -130,10 +130,9 @@ img.avatar:hover {
 
 /* Turn off parallax scrolling on tablets and phones */
 @media only screen and (max-width: 1600px) {
-    .leo-bgimg-1,
-    .leo-bgimg-2,
-    .bgimg-3 {
+    .leo-parallax-1,
+    .leo-parallax-2,
+    .leo-parallax-3 {
         background-attachment: scroll;
-        min-height: 400px;
     }
 }
