@@ -7,6 +7,10 @@
     --fontweight-titles: 800;
     --fontfamilly-textos: "Clarity City", sans-serif;
     --fontweight-textos: 400;
+
+    --bg-fixed1: url("../img/tag-html_1920.webp");
+    --bg-fixed2: url("../img/developer_1920.webp");
+    --bg-fixed3: url("../img/web-design_1920.webp");
 }
 
 body,
@@ -88,15 +92,15 @@ img {
 
 .leo-portada {
     min-height: 100%;
-    background-image: url("../img/tag-html_1920.webp");
+    background-image: var(--bg-fixed1);
 }
 
 .leo-parallax-2 {
-    background-image: url("../img/developer_1920.webp");
+    background-image: var(--bg-fixed2);
 }
 
 .leo-parallax-3 {
-    background-image: url("../img/web-design_1920.webp");
+    background-image: var(--bg-fixed3);
 }
 
 .w3-wide {
