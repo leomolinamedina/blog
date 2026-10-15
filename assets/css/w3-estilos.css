@@ -74,6 +74,7 @@ img {
 }
 
 .leo-bgimg {
+    background-color: var(--color-primario);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
